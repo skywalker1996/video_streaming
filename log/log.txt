@@ -1,0 +1,25 @@
+
+python:
+
+send: frame= 6531 fps= 30 q=-1.0 Lsize=  265457kB time=00:03:37.88 bitrate=9980.6kbits/s speed=   1x 
+recv: 260421.0751953125
+
+
+C++:
+
+recv: 265309.6044921875
+
+
+python recv only(直接ffmpeg发给client):
+
+recv: 265144.16015625
+
+
+python full function(边收边发（包含queue），发给client):
+
+recv:260310.892578125
+
+
+python recv only using queue (直接ffmpeg发给client，):
+
+recv: 265268.5517578125
